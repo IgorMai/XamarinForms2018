@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ConsultaCEP"
+             x:Class="ConsultaCEP.MainPage">
+
+    <StackLayout BackgroundColor="#FFBF00" Padding="30" Spacing="30">
+        <Image Source="Logo.png"/>
+        <Entry 
+            Keyboard="Numeric" 
+            Placeholder="Digite o CEP" 
+            PlaceholderColor="#FFBF00" 
+            BackgroundColor="#FFFFFF"
+            x:Name="CEP"/>
+        <Button 
+            Text="Buscar CEP" 
+            TextColor="#FFFFFF" 
+            BackgroundColor="#00416B"
+            Margin="70,0,70,0"
+            WidthRequest="70"
+            BorderRadius="30"
+            x:Name="BOTAO"/>        
+        <Label
+            Text="" 
+            x:Name="RESULT"
+            TextColor="White"
+            Margin="5,5,5,5"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="20"/>        
+    </StackLayout>
+    
+</ContentPage>
